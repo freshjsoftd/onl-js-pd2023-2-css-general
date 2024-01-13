@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    color: blue;
+    --main-color: magenta;
+    --el-numbers: 4;
+    --brick-height: 100px;
+    --brick-border-thick: 3px;
+    --brick-font-size: 20px;
+}
+body{
+    width: 100%;
+}
+nav{
+    text-align: center;
+    margin: auto;
+    
+}
+ul > li{
+    margin: auto;
+    color: var(--main-color);
+    list-style: none;
+}
+a{
+    color: var(--main-color);
+}
+p{
+    color: var(--main-color);
+}
+.brick-container{
+    width: 100%;
+    font-size: 0;
+}
+.brick{
+    border: var(--brick-border-thick) solid red; 
+    background-color: var(--main-color);
+    /* margin: 10px; */
+    margin-bottom: 50px;
+    padding: calc((var(--brick-height) - var(--brick-font-size) - var(--brick-border-thick))/2);
+    /* width: calc(100%/var(--el-numbers)); */
+    min-width: 20%;
+    max-width: 40%;
+    font-size: var(--brick-font-size);
+    /* height: var(--brick-height); */
+    height: min(50px, 200px, 100px, 300px);
+    display: inline-block; 
+}
+.out-div{
+    border: 3px solid brown;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.inner-div{
+    border: 1px solid magenta;
+    font-size: 20px;
+    width: 100px;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.grad-container > div{
+    width: 70%;
+    height: 100px;
+    border: 3px solid green;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+/* div:first-child{
+    display: none;
+    visibility: hidden;
+} */
+span{
+    border: 2px solid blue;
+    width: 100px;
+}
+#gradient1{
+    background: linear-gradient(teal, cyan);
+}
+#gradient2{
+    background: linear-gradient(to left, teal, cyan);
+}
+#gradient3{
+    background: linear-gradient(to top left, red, cyan);
+}
+#gradient4{
+    background: linear-gradient(-30deg, yellow, magenta);
+}
+#gradient5{
+    background: repeating-linear-gradient(-30deg, white, yellow, black 50px);
+}
+#gradient6{
+    background: repeating-radial-gradient(closest-side at 50% 50%,  yellow, black);
+}
+#gradient7{
+    background: linear-gradient(to right,  
+    red 15%,
+    orange 15% 35%,
+    yellow 30% 45%,
+    green 45% 60%,
+    blue 60% 75%,
+    indigo 75% 90%,
+    violet 90%
+    );
+}
