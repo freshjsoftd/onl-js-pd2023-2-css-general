@@ -32,6 +32,7 @@ nav{
     text-align: center;
     padding: 10px 20px;
     background-color: teal;
+    flex-shrink: 2;
 }
 
 /* Flex properties */
@@ -52,7 +53,7 @@ nav{
 }
 .flex-container > div:nth-child(1){
     /* order: -1; */
-    flex-shrink: 2;
+    flex-shrink: 1;
     /* flex-grow: 1; */
     /* flex-basis: 200px; */
 }
